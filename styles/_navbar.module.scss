@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.burgerMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.navbarMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbarMenuItem {
+  margin-right: 1rem;
+}
+
+.navbarMenuLink {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.navbarMenuLink:hover {
+  color: #e7e7e7;
+}
+
+// Mobile Styles
+@media (max-width: 768px) {
+  .navbar{
+    min-height: 70px;
+    height: auto;
+  }
+  .navbarMenu {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .navbarMenu.open {
+    display: flex;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}

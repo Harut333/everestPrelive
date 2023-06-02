@@ -1,0 +1,37 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupContent {
+  width: 100%;
+  text-align: center;
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .popup {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

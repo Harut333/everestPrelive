@@ -1,0 +1,78 @@
+.authForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.authFormTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.authFormField {
+  margin-bottom: 15px;
+}
+
+.authFormFieldLabel {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.authFormFieldInput {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.authFormButton {
+  width: 100%;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.authFormError {
+  color: red;
+  margin-top: 10px;
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .authForm {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .authFormTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .authFormFieldInput {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .authFormButton {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .authFormError {
+    font-size: 12px;
+  }
+}
